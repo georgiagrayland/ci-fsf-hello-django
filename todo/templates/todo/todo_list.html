@@ -17,6 +17,8 @@
                 <td>{{ item.done }}</td>
             {% endif %}
         </tr>
+        {% empty %}
+        <tr><td></td></tr>
         {% endfor %}
     </table>
 </body>
