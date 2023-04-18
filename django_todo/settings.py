@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-rdyf7ll10lwzd=ta2x92@_4!hf)pe48iqj8@a_-g=-t5mq^pf*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-georgiagrayland-ci-fsf-h-ne5ovz7ps1.us2.codeanyapp.com']
-CSRF_TRUSTED_ORIGINS = ['http://8000-georgiagrayland-ci-fsf-h-ne5ovz7ps1.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-georgiagrayland-ci-fsf-h-vhg2o89ljf.us2.codeanyapp.com']
+CSRF_TRUSTED_ORIGINS = ['http://8000-georgiagrayland-ci-fsf-h-vhg2o89ljf.us2.codeanyapp.com']
 
 
 # Application definition
