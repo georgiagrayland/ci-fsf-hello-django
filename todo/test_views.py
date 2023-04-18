@@ -4,7 +4,6 @@ from .models import Item
 # Create your tests here.
 class TestViews(TestCase):
 
-
     def test_get_todo_list(self):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
@@ -27,14 +26,14 @@ class TestViews(TestCase):
 
     def test_can_delete_item(self):
         item = Item.objects.create(name='Test Todo Item')
-        response = self.client.get(f'/delete/{item.id}')
+        response = self.client.get(f"/delete/{item.id}")
         self.assertRedirects(response, '/')
         existing_items = Item.objects.filter(id=item.id)
         self.assertEqual(len(existing_items), 0)
 
     def test_can_toggle_item(self):
         item = Item.objects.create(name='Test Todo Item', done=True)
-        response = self.client.get(f'/toggle/{item.id}')
+        response = self.client.get(f"/toggle/{item.id}")
         self.assertRedirects(response, '/')
         updated_item = Item.objects.get(id=item.id)
         self.assertFalse(updated_item.done)
