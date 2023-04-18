@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 import dj_database_url
+import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,8 +28,8 @@ SECRET_KEY = 'django-insecure-rdyf7ll10lwzd=ta2x92@_4!hf)pe48iqj8@a_-g=-t5mq^pf*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8001-georgiagrayland-ci-fsf-h-vhg2o89ljf.us2.codeanyapp.com']
-CSRF_TRUSTED_ORIGINS = ['http://88001-georgiagrayland-ci-fsf-h-vhg2o89ljf.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['gg-django-todo-app-fsf.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://gg-django-todo-app-fsf.herokuapp.com']
 
 
 # Application definition
